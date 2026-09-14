@@ -1,0 +1,113 @@
+.registerFormContainer {
+  min-height: 80vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #eef2ff, #dbeafe); */
+  padding: 20px;
+}
+
+.registerFormCard {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid black; */
+}
+
+.registerFormTitle {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.registerFormSubtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.registerFormGroup {
+  margin-bottom: 20px;
+}
+
+.registerFormLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.registerFormInput {
+  height: 48px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.registerFormInput:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.registerFormInput::placeholder {
+  color: #9ca3af;
+}
+
+.registerFormInput.inputError {
+  border-color: #dc2626;
+}
+
+.registerFormInput.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.registerFormError {
+  color: #dc2626;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.registerFormButton {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4f46e5;
+  transition: all 0.2s ease;
+}
+
+.registerFormButton:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+}
+
+.registerFormButton:active {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .registerFormContainer {
+    padding: 15px;
+  }
+
+  .registerFormCard {
+    padding: 25px 20px;
+  }
+
+  .registerFormTitle {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,532 @@
+[
+  {
+    "title": "Getting Started with JavaScript",
+    "content": "JavaScript is one of the most popular programming languages for building interactive web applications. Learn the fundamentals and start writing your first programs.",
+    "category": "JavaScript",
+    "author": "John Smith",
+    "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479",
+    "price": 450,
+    "createdAt": "2026-07-12T11:00:00Z",
+    "updatedAt": "2026-07-12T11:30:00Z"
+  },
+  {
+    "title": "Understanding React Components",
+    "content": "React components are the building blocks of modern React applications. Learn how functional components work and how to reuse them effectively.",
+    "category": "React",
+    "author": "Sarah Johnson",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "price": 700,
+    "createdAt": "2026-07-13T09:00:00Z",
+    "updatedAt": "2026-07-13T09:45:00Z"
+  },
+  {
+    "title": "Introduction to Node.js",
+    "content": "Node.js allows developers to run JavaScript outside the browser. Discover how Node.js works and why it is widely used for backend development.",
+    "category": "Node.js",
+    "author": "David Wilson",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "price": 550,
+    "createdAt": "2026-07-14T14:00:00Z",
+    "updatedAt": "2026-07-14T15:00:00Z"
+  },
+  {
+    "title": "MongoDB Basics for Beginners",
+    "content": "MongoDB is a popular NoSQL database used in many modern applications. Learn about collections, documents, and basic database operations.",
+    "category": "MongoDB",
+    "author": "Emily Davis",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "price": 650,
+    "createdAt": "2026-07-15T10:30:00Z",
+    "updatedAt": "2026-07-15T11:15:00Z"
+  },
+  {
+    "title": "Building REST APIs with Express",
+    "content": "Express makes it simple to build powerful REST APIs with Node.js. Learn how routes, middleware, and controllers work together.",
+    "category": "Express",
+    "author": "Michael Brown",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "price": 800,
+    "createdAt": "2026-07-16T08:00:00Z",
+    "updatedAt": "2026-07-16T08:40:00Z"
+  },
+  {
+    "title": "CSS Flexbox Explained",
+    "content": "Flexbox provides an easy way to create flexible layouts. Understand the main properties and learn how to align elements properly.",
+    "category": "CSS",
+    "author": "Jessica Miller",
+    "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2",
+    "price": 400,
+    "createdAt": "2026-07-17T12:00:00Z",
+    "updatedAt": "2026-07-17T12:25:00Z"
+  },
+  {
+    "title": "CSS Grid Layout Guide",
+    "content": "CSS Grid is a powerful layout system for creating responsive web pages. Learn rows, columns, gaps, and responsive grid techniques.",
+    "category": "CSS",
+    "author": "Robert Taylor",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "price": 500,
+    "createdAt": "2026-07-18T13:30:00Z",
+    "updatedAt": "2026-07-18T14:10:00Z"
+  },
+  {
+    "title": "Understanding JavaScript Promises",
+    "content": "Promises are essential for handling asynchronous operations in JavaScript. Learn how promises work and how to handle success and errors.",
+    "category": "JavaScript",
+    "author": "Daniel Anderson",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "price": 600,
+    "createdAt": "2026-07-19T09:15:00Z",
+    "updatedAt": "2026-07-19T10:00:00Z"
+  },
+  {
+    "title": "Async Await in JavaScript",
+    "content": "Async and await make asynchronous JavaScript code easier to read and maintain. Learn how they work with practical examples.",
+    "category": "JavaScript",
+    "author": "Sophia Thomas",
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
+    "price": 750,
+    "createdAt": "2026-07-20T15:00:00Z",
+    "updatedAt": "2026-07-20T15:45:00Z"
+  },
+  {
+    "title": "React State and Props",
+    "content": "State and props are fundamental concepts in React. Understand the difference between them and learn when to use each one.",
+    "category": "React",
+    "author": "James Moore",
+    "image": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667",
+    "price": 550,
+    "createdAt": "2026-07-21T11:30:00Z",
+    "updatedAt": "2026-07-21T12:00:00Z"
+  },
+  {
+    "title": "React Hooks for Beginners",
+    "content": "React Hooks allow functional components to use state and other React features. Learn about useState and useEffect.",
+    "category": "React",
+    "author": "Olivia Martin",
+    "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
+    "price": 850,
+    "createdAt": "2026-07-22T10:00:00Z",
+    "updatedAt": "2026-07-22T10:35:00Z"
+  },
+  {
+    "title": "Understanding useEffect",
+    "content": "The useEffect hook is commonly used for side effects in React. Learn when it runs and how to control its execution.",
+    "category": "React",
+    "author": "William Jackson",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "price": 900,
+    "createdAt": "2026-07-23T08:45:00Z",
+    "updatedAt": "2026-07-23T09:20:00Z"
+  },
+  {
+    "title": "Node.js File System Module",
+    "content": "Node.js provides a powerful file system module for working with files and directories. Learn how to read and write files.",
+    "category": "Node.js",
+    "author": "Ava White",
+    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29",
+    "price": 450,
+    "createdAt": "2026-07-24T14:15:00Z",
+    "updatedAt": "2026-07-24T15:00:00Z"
+  },
+  {
+    "title": "Express Middleware Explained",
+    "content": "Middleware functions are an important part of Express applications. Learn how middleware processes requests before they reach the route.",
+    "category": "Express",
+    "author": "Alexander Harris",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+    "price": 700,
+    "createdAt": "2026-07-25T09:30:00Z",
+    "updatedAt": "2026-07-25T10:10:00Z"
+  },
+  {
+    "title": "MongoDB CRUD Operations",
+    "content": "CRUD operations allow applications to create, read, update, and delete database records. Learn the basics using MongoDB.",
+    "category": "MongoDB",
+    "author": "Mia Clark",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "price": 650,
+    "createdAt": "2026-07-26T13:00:00Z",
+    "updatedAt": "2026-07-26T13:50:00Z"
+  },
+  {
+    "title": "Introduction to Git",
+    "content": "Git is a version control system used by developers around the world. Learn the basic commands needed for everyday development.",
+    "category": "Development",
+    "author": "Ethan Lewis",
+    "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+    "price": 350,
+    "createdAt": "2026-07-27T10:15:00Z",
+    "updatedAt": "2026-07-27T10:45:00Z"
+  },
+  {
+    "title": "Git Branching Strategies",
+    "content": "Branches allow developers to work on features independently. Learn how to create, merge, and manage Git branches.",
+    "category": "Development",
+    "author": "Charlotte Lee",
+    "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+    "price": 500,
+    "createdAt": "2026-07-28T11:00:00Z",
+    "updatedAt": "2026-07-28T11:40:00Z"
+  },
+  {
+    "title": "Responsive Web Design",
+    "content": "Responsive design ensures websites work well across phones, tablets, and desktops. Learn important techniques for responsive layouts.",
+    "category": "Web Design",
+    "author": "Benjamin Walker",
+    "image": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+    "price": 600,
+    "createdAt": "2026-07-29T09:00:00Z",
+    "updatedAt": "2026-07-29T09:30:00Z"
+  },
+  {
+    "title": "JavaScript Array Methods",
+    "content": "JavaScript provides many useful array methods such as map, filter, reduce, find, and forEach. Learn when to use each method.",
+    "category": "JavaScript",
+    "author": "Amelia Hall",
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea",
+    "price": 800,
+    "createdAt": "2026-07-30T14:30:00Z",
+    "updatedAt": "2026-07-30T15:15:00Z"
+  },
+  {
+    "title": "JavaScript Closures Explained",
+    "content": "Closures are an important JavaScript concept that allows functions to remember variables from their outer scope.",
+    "category": "JavaScript",
+    "author": "Henry Allen",
+    "image": "https://images.unsplash.com/photo-1555066932-e78dd8fb77bb",
+    "price": 700,
+    "createdAt": "2026-07-31T12:00:00Z",
+    "updatedAt": "2026-07-31T12:35:00Z"
+  },
+  {
+    "title": "Understanding JavaScript Events",
+    "content": "Events allow web applications to respond to user actions. Learn about event bubbling, capturing, and event delegation.",
+    "category": "JavaScript",
+    "author": "Ella Young",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "price": 550,
+    "createdAt": "2026-08-01T08:30:00Z",
+    "updatedAt": "2026-08-01T09:15:00Z"
+  },
+  {
+    "title": "React Router Basics",
+    "content": "React Router allows single-page React applications to have multiple views and URLs. Learn how routing works.",
+    "category": "React",
+    "author": "Lucas King",
+    "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb",
+    "price": 650,
+    "createdAt": "2026-08-02T10:00:00Z",
+    "updatedAt": "2026-08-02T10:40:00Z"
+  },
+  {
+    "title": "Creating Forms in React",
+    "content": "Forms are an important part of web applications. Learn how to create and manage controlled forms in React.",
+    "category": "React",
+    "author": "Grace Wright",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+    "price": 450,
+    "createdAt": "2026-08-03T13:15:00Z",
+    "updatedAt": "2026-08-03T14:00:00Z"
+  },
+  {
+    "title": "Form Validation in React",
+    "content": "Proper form validation improves user experience and data quality. Learn common validation techniques for React applications.",
+    "category": "React",
+    "author": "Jack Scott",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+    "price": 750,
+    "createdAt": "2026-08-04T09:45:00Z",
+    "updatedAt": "2026-08-04T10:30:00Z"
+  },
+  {
+    "title": "Understanding REST APIs",
+    "content": "REST APIs allow different applications to communicate over HTTP. Learn GET, POST, PUT, PATCH, and DELETE operations.",
+    "category": "API",
+    "author": "Chloe Green",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "price": 850,
+    "createdAt": "2026-08-05T11:30:00Z",
+    "updatedAt": "2026-08-05T12:15:00Z"
+  },
+  {
+    "title": "HTTP Status Codes Every Developer Should Know",
+    "content": "HTTP status codes describe the result of an HTTP request. Learn the most important success, client error, and server error codes.",
+    "category": "API",
+    "author": "Matthew Adams",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "price": 500,
+    "createdAt": "2026-08-06T15:00:00Z",
+    "updatedAt": "2026-08-06T15:45:00Z"
+  },
+  {
+    "title": "JWT Authentication Explained",
+    "content": "JSON Web Tokens are commonly used for authentication in modern applications. Learn how access tokens and authentication work.",
+    "category": "Authentication",
+    "author": "Lily Baker",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+    "price": 900,
+    "createdAt": "2026-08-07T08:00:00Z",
+    "updatedAt": "2026-08-07T08:50:00Z"
+  },
+  {
+    "title": "Access Token vs Refresh Token",
+    "content": "Access and refresh tokens serve different purposes in authentication systems. Learn why both can be useful.",
+    "category": "Authentication",
+    "author": "Samuel Nelson",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "price": 950,
+    "createdAt": "2026-08-08T10:30:00Z",
+    "updatedAt": "2026-08-08T11:15:00Z"
+  },
+  {
+    "title": "Password Hashing with bcrypt",
+    "content": "Passwords should never be stored as plain text. Learn how bcrypt can securely hash passwords before storing them.",
+    "category": "Security",
+    "author": "Zoe Carter",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+    "price": 800,
+    "createdAt": "2026-08-09T12:00:00Z",
+    "updatedAt": "2026-08-09T12:45:00Z"
+  },
+  {
+    "title": "Understanding CORS",
+    "content": "CORS controls how browsers allow requests between different origins. Learn why CORS is important when connecting React and Express.",
+    "category": "Express",
+    "author": "Daniel Mitchell",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "price": 600,
+    "createdAt": "2026-08-10T09:00:00Z",
+    "updatedAt": "2026-08-10T09:40:00Z"
+  },
+  {
+    "title": "Connecting React with Express",
+    "content": "Learn how a React frontend communicates with an Express backend using HTTP requests and REST APIs.",
+    "category": "MERN",
+    "author": "Hannah Perez",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "price": 750,
+    "createdAt": "2026-08-11T14:00:00Z",
+    "updatedAt": "2026-08-11T14:45:00Z"
+  },
+  {
+    "title": "Building Your First MERN Application",
+    "content": "The MERN stack combines MongoDB, Express, React, and Node.js. Learn how these technologies work together.",
+    "category": "MERN",
+    "author": "Noah Roberts",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "price": 1000,
+    "createdAt": "2026-08-12T11:15:00Z",
+    "updatedAt": "2026-08-12T12:00:00Z"
+  },
+  {
+    "title": "Organizing an Express Project",
+    "content": "A clean project structure makes backend applications easier to maintain. Learn how to organize routes, controllers, models, and middleware.",
+    "category": "Node.js",
+    "author": "Victoria Turner",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "price": 650,
+    "createdAt": "2026-08-13T08:45:00Z",
+    "updatedAt": "2026-08-13T09:30:00Z"
+  },
+  {
+    "title": "Mongoose Schema and Models",
+    "content": "Mongoose provides schemas and models for working with MongoDB in Node.js applications. Learn the difference between them.",
+    "category": "MongoDB",
+    "author": "Leo Phillips",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "price": 700,
+    "createdAt": "2026-08-14T13:00:00Z",
+    "updatedAt": "2026-08-14T13:40:00Z"
+  },
+  {
+    "title": "JavaScript Scope Explained",
+    "content": "Understanding scope is essential for writing reliable JavaScript. Learn about global, function, and block scope.",
+    "category": "JavaScript",
+    "author": "Isabella Campbell",
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea",
+    "price": 550,
+    "createdAt": "2026-08-15T10:00:00Z",
+    "updatedAt": "2026-08-15T10:35:00Z"
+  },
+  {
+    "title": "JavaScript Event Loop",
+    "content": "The event loop is one of the most important concepts behind asynchronous JavaScript. Learn how the call stack and task queues work.",
+    "category": "JavaScript",
+    "author": "Logan Parker",
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
+    "price": 850,
+    "createdAt": "2026-08-16T15:15:00Z",
+    "updatedAt": "2026-08-16T16:00:00Z"
+  },
+  {
+    "title": "React Conditional Rendering",
+    "content": "Conditional rendering allows React applications to display different UI based on application state and user actions.",
+    "category": "React",
+    "author": "Evelyn Evans",
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "price": 450,
+    "createdAt": "2026-08-17T09:30:00Z",
+    "updatedAt": "2026-08-17T10:15:00Z"
+  },
+  {
+    "title": "React Lists and Keys",
+    "content": "Rendering arrays is common in React applications. Learn how map works with JSX and why unique keys are important.",
+    "category": "React",
+    "author": "Mason Edwards",
+    "image": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667",
+    "price": 600,
+    "createdAt": "2026-08-18T12:30:00Z",
+    "updatedAt": "2026-08-18T13:15:00Z"
+  },
+  {
+    "title": "Express Route Parameters",
+    "content": "Route parameters allow Express applications to work with dynamic URLs. Learn how to access parameters through req.params.",
+    "category": "Express",
+    "author": "Harper Collins",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "price": 500,
+    "createdAt": "2026-08-19T08:00:00Z",
+    "updatedAt": "2026-08-19T08:40:00Z"
+  },
+  {
+    "title": "Express Error Handling",
+    "content": "Proper error handling is important for reliable APIs. Learn how Express error-handling middleware works.",
+    "category": "Express",
+    "author": "Sebastian Stewart",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "price": 750,
+    "createdAt": "2026-08-20T11:00:00Z",
+    "updatedAt": "2026-08-20T11:45:00Z"
+  },
+  {
+    "title": "MongoDB Query Operators",
+    "content": "MongoDB provides powerful query operators for filtering and manipulating documents. Learn common operators with examples.",
+    "category": "MongoDB",
+    "author": "Eleanor Sanchez",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "price": 850,
+    "createdAt": "2026-08-21T14:30:00Z",
+    "updatedAt": "2026-08-21T15:15:00Z"
+  },
+  {
+    "title": "MongoDB Indexing Basics",
+    "content": "Indexes can significantly improve database query performance. Learn what indexes are and when you should use them.",
+    "category": "MongoDB",
+    "author": "Owen Morris",
+    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "price": 900,
+    "createdAt": "2026-08-22T09:15:00Z",
+    "updatedAt": "2026-08-22T10:00:00Z"
+  },
+  {
+    "title": "Understanding HTTP Requests",
+    "content": "HTTP requests are the foundation of communication between clients and servers. Learn methods, headers, body, and responses.",
+    "category": "Web Development",
+    "author": "Abigail Rogers",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "price": 450,
+    "createdAt": "2026-08-23T13:00:00Z",
+    "updatedAt": "2026-08-23T13:45:00Z"
+  },
+  {
+    "title": "Frontend vs Backend Development",
+    "content": "Frontend and backend developers work on different parts of an application. Learn their responsibilities and how they communicate.",
+    "category": "Development",
+    "author": "Carter Reed",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "price": 650,
+    "createdAt": "2026-08-24T10:30:00Z",
+    "updatedAt": "2026-08-24T11:15:00Z"
+  },
+  {
+    "title": "How Databases Work",
+    "content": "Databases allow applications to store and retrieve information efficiently. Learn the basic concepts behind modern databases.",
+    "category": "Database",
+    "author": "Elizabeth Cook",
+    "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    "price": 550,
+    "createdAt": "2026-08-25T08:30:00Z",
+    "updatedAt": "2026-08-25T09:15:00Z"
+  },
+  {
+    "title": "Web Authentication Basics",
+    "content": "Authentication allows applications to identify users securely. Learn about login systems, sessions, tokens, and passwords.",
+    "category": "Security",
+    "author": "Julian Morgan",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+    "price": 700,
+    "createdAt": "2026-08-26T15:00:00Z",
+    "updatedAt": "2026-08-26T15:45:00Z"
+  },
+  {
+    "title": "Understanding authorization",
+    "content": "authorization determines what an authenticated user is allowed to access. Learn about roles, permissions, and protected resources.",
+    "category": "Security",
+    "author": "Scarlett Bell",
+    "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3",
+    "price": 800,
+    "createdAt": "2026-08-27T11:30:00Z",
+    "updatedAt": "2026-08-27T12:15:00Z"
+  },
+  {
+    "title": "Deploying a MERN Application",
+    "content": "Deployment makes your MERN application available online. Learn the basic steps involved in deploying frontend and backend applications.",
+    "category": "MERN",
+    "author": "Wyatt Murphy",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "price": 950,
+    "createdAt": "2026-08-28T09:00:00Z",
+    "updatedAt": "2026-08-28T09:45:00Z"
+  },
+  {
+    "title": "Environment Variables in Node.js",
+    "content": "Environment variables help keep configuration and sensitive values outside your source code. Learn how to use them in Node.js.",
+    "category": "Node.js",
+    "author": "Nora Bailey",
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "price": 600,
+    "createdAt": "2026-08-29T14:00:00Z",
+    "updatedAt": "2026-08-29T14:40:00Z"
+  },
+  {
+    "title": "Building a Blog API",
+    "content": "A blog API provides endpoints for creating, reading, updating, and deleting blog posts. Learn how to design a simple API.",
+    "category": "API",
+    "author": "Grayson Rivera",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "price": 750,
+    "createdAt": "2026-08-30T10:00:00Z",
+    "updatedAt": "2026-08-30T10:50:00Z"
+  },
+  {
+    "title": "Pagination in REST APIs",
+    "content": "Pagination prevents APIs from returning too much data at once. Learn how to implement page and limit parameters.",
+    "category": "API",
+    "author": "Layla Cooper",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "price": 500,
+    "createdAt": "2026-08-31T12:00:00Z",
+    "updatedAt": "2026-08-31T12:45:00Z"
+  },
+  {
+    "title": "Searching and Filtering Blog Posts",
+    "content": "Search and filtering make blog applications easier to use. Learn how to implement query parameters for searching posts.",
+    "category": "MERN",
+    "author": "Lincoln Richardson",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "price": 850,
+    "createdAt": "2026-09-01T09:30:00Z",
+    "updatedAt": "2026-09-01T10:15:00Z"
+  },
+  {
+    "title": "Best Practices for MERN Projects",
+    "content": "A well-structured MERN application is easier to maintain and scale. Learn some practical best practices for full-stack development.",
+    "category": "MERN",
+    "author": "Aria Cox",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "price": 1000,
+    "createdAt": "2026-09-02T13:00:00Z",
+    "updatedAt": "2026-09-02T13:45:00Z"
+  }
+]

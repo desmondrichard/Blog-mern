@@ -1,0 +1,166 @@
+.dashboardContainer {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.dashboardWrapper {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  gap: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dashboardWrapperContentLeft {
+  width: 70%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.dashboardWrapperContentLeftContent {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.dashboardTitle {
+  margin: 0 0 10px 0;
+}
+
+.dashboardCreatePostForm {
+  width: 100%;
+  height: calc(100% - 35px);
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dashboardCreatePostForm::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboardCreatePostForm::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dashboardCreatePostForm::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+.dashboardCreatePostForm::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Firefox */
+
+.dashboardCreatePostForm {
+  scrollbar-width: thin;
+  scrollbar-color: #999 transparent;
+}
+
+.dashboardWrapperContentRight {
+  width: 30%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.dashboardWrapperContentRightContent {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.pieChartContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  max-height: 55vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .dashboardContainer {
+    margin: 60px 0px;
+  }
+
+  .dashboardWrapper {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    overflow: visible;
+  }
+
+  .dashboardWrapperContentLeft,
+  .dashboardWrapperContentRight {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .dashboardWrapperContentLeftContent {
+    height: auto;
+  }
+
+  .dashboardCreatePostForm {
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .dashboardWrapperContentRightContent {
+    height: auto;
+    overflow: visible;
+  }
+
+  .pieChartContainer {
+    max-width: 350px;
+    height: 350px;
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .dashboardContainer {
+    margin: 80px 0px;
+  }
+
+  .dashboardWrapper {
+    gap: 20px;
+  }
+
+  .dashboardCreatePostForm {
+    padding: 12px;
+    max-height: 60vh;
+  }
+
+  .dashboardTitle {
+    font-size: 17px;
+  }
+
+  .pieChartContainer {
+    max-width: 280px;
+    height: 280px;
+    max-height: 40vh;
+  }
+}

@@ -1,0 +1,15 @@
+.globalFooterContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0px;
+  z-index: 1;
+}
+
+.globalFooterText {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}

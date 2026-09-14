@@ -1,0 +1,118 @@
+.loginFormContainer {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #eef2ff, #dbeafe); */
+  padding: 20px;
+}
+
+.loginFormCard {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.loginFormTitle {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.loginFormSubtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.loginFormGroup {
+  margin-bottom: 20px;
+}
+
+.loginFormLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.loginServerError {
+  color: red;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.loginFormInput {
+  height: 48px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.loginFormInput:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.loginFormInput::placeholder {
+  color: #9ca3af;
+}
+
+.loginFormInput.inputError {
+  border-color: #dc2626;
+}
+
+.loginFormInput.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.loginFormError {
+  color: #dc2626;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.loginFormButton {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #4f46e5;
+  transition: all 0.2s ease;
+}
+
+.loginFormButton:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+}
+
+.loginFormButton:active {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .loginFormContainer {
+    padding: 15px;
+  }
+
+  .loginFormCard {
+    padding: 25px 20px;
+  }
+
+  .loginFormTitle {
+    font-size: 24px;
+  }
+}

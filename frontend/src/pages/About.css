@@ -1,0 +1,247 @@
+.aboutContainer {
+  margin: 80px 0;
+  overflow-x: hidden;
+}
+
+.aboutHero {
+  max-width: 850px;
+  margin: 0 auto 80px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.aboutSubtitle {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.aboutHero h1 {
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.aboutHero p {
+  margin: 0 auto;
+  max-width: 700px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.aboutSection {
+  margin-bottom: 70px;
+  padding: 0 15px;
+}
+
+.aboutSection h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.aboutSection > p {
+  max-width: 850px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.aboutCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.aboutCard {
+  padding: 30px;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+}
+
+.aboutCard h3 {
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.aboutCard p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.aboutPoints {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 30px;
+}
+
+.aboutPoints h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.aboutPoints p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.aboutClosing {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  background: #f7f7f7;
+}
+
+.aboutClosing h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.aboutClosing p {
+  line-height: 1.8;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .aboutContainer {
+    padding: 60px 0;
+  }
+
+  .aboutHero {
+    margin-bottom: 60px;
+  }
+
+  .aboutHero h1 {
+    font-size: 40px;
+  }
+
+  .aboutCards {
+    gap: 20px;
+  }
+
+  .aboutPoints {
+    gap: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .aboutContainer {
+    padding: 45px 0;
+  }
+
+  .aboutHero {
+    margin-bottom: 55px;
+  }
+
+  .aboutHero h1 {
+    font-size: 32px;
+  }
+
+  .aboutHero p {
+    font-size: 16px;
+  }
+
+  .aboutSection {
+    margin-bottom: 50px;
+  }
+
+  .aboutSection h2 {
+    font-size: 27px;
+  }
+
+  .aboutCards,
+  .aboutPoints {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutCard {
+    padding: 25px;
+  }
+
+  .aboutClosing {
+    padding: 35px 20px;
+  }
+
+  .aboutClosing h2 {
+    font-size: 24px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 575px) {
+  .aboutContainer {
+    padding: 35px 0;
+  }
+
+  .aboutHero {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .aboutSubtitle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutHero h1 {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .aboutHero h1 br {
+    display: none;
+  }
+
+  .aboutHero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .aboutSection {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .aboutSection h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .aboutSection > p {
+    font-size: 15px;
+  }
+
+  .aboutCard {
+    padding: 20px;
+  }
+
+  .aboutCard h3 {
+    font-size: 18px;
+  }
+
+  .aboutPoints {
+    gap: 22px;
+  }
+
+  .aboutPoints h3 {
+    font-size: 18px;
+  }
+
+  .aboutClosing {
+    padding: 28px 15px;
+    border-radius: 12px;
+  }
+
+  .aboutClosing h2 {
+    font-size: 20px;
+  }
+
+  .aboutClosing p {
+    font-size: 15px;
+  }
+}

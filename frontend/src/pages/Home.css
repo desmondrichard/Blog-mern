@@ -1,0 +1,110 @@
+.homeContainer {
+  margin: 65px 0px;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  /* background: linear-gradient(135deg, #eef2ff, #dbeafe); */
+}
+
+.homeCard {
+  width: 100%;
+  max-width: 450px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Login / Register toggle */
+
+.authToggle {
+  display: flex;
+  gap: 5px;
+
+  margin: 20px 20px 0;
+  padding: 5px;
+
+  background-color: #f3f4f6;
+  border-radius: 10px;
+}
+
+.authToggleButton {
+  flex: 1;
+
+  padding: 11px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: transparent;
+  color: #6b7280;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.authToggleButton:hover {
+  color: #4f46e5;
+}
+
+.authToggleButton.active {
+  background-color: #ffffff;
+  color: #4f46e5;
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+
+.homeForm {
+  width: 100%;
+}
+
+/*
+  Login/Register already have their own
+  container and card styles.
+  Override those styles when displayed here.
+*/
+
+.homeForm .loginFormContainer,
+.homeForm .registerFormContainer {
+  min-height: auto;
+  padding: 30px;
+  background: transparent;
+}
+
+.homeForm .loginFormCard,
+.homeForm .registerFormCard {
+  max-width: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  .homeContainer {
+    padding: 10px;
+  }
+
+  .homeCard {
+    max-width: 100%;
+  }
+
+  .authToggle {
+    margin: 15px 15px 0;
+  }
+
+  .homeForm .loginFormContainer,
+  .homeForm .registerFormContainer {
+    padding: 25px 20px;
+  }
+}
