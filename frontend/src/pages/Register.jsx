@@ -2,8 +2,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useFormik } from "formik";
-import axios from "axios";
-
+// import axios from "axios";
+import api from "../api/axios";
 import "./Register.css";
 
 const validate = (values) => {
@@ -49,13 +49,14 @@ const Register = ({ onRegisterSuccess }) => {
     // },
     onSubmit: async (values) => {
       try {
-        const response = await axios.post(
-          "http://localhost:8000/api/auth/register",
-          values,
-          {
-            withCredentials: true,
-          },
-        );
+        // const response = await axios.post(
+        //   "http://localhost:8000/api/auth/register",
+        //   values,
+        //   {
+        //     withCredentials: true,
+        //   },
+        // );
+        const response = await api.post("/auth/register", values);
         // Registration successful toggle to login:
         onRegisterSuccess();
         console.log(response.data);

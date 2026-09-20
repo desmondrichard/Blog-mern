@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import axios from "axios";
+// import axios from "axios";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import { cartContext, modalContext } from "../App";
@@ -36,7 +36,8 @@ const Posts = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/posts", {
+      // const response = await axios.get("http://localhost:8000/api/posts", {
+      const response = await api.get("/posts", {
         params: {
           category: category,
         },
@@ -51,9 +52,10 @@ const Posts = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get(
-        "http://localhost:8000/api/posts/categories",
-      );
+      // const response = await axios.get(
+      //   "http://localhost:8000/api/posts/categories",
+      // );
+      const response = await api.get("/posts/categories");
 
       setCategories(response.data);
     } catch (error) {

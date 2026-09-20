@@ -222,7 +222,6 @@ router.post("/refresh", async (req, res) => {
 router.post("/logout", (req, res) => {
   res.clearCookie("accessToken", cookieOptions);
   res.clearCookie("refreshToken", refreshCookieOptions);
-
   res.json({
     message: "Logout successful",
   });

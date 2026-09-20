@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+import api from "../api/axios";
 import "./PostDetail.css";
 
 const PostDetail = () => {
@@ -10,8 +11,8 @@ const PostDetail = () => {
 
   const fetchPost = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/posts/${id}`);
-
+      // const response = await axios.get(`http://localhost:8000/api/posts/${id}`);
+      const response = await api.get(`/posts/${id}`);
       setPost(response.data);
     } catch (error) {
       console.log(error.message);

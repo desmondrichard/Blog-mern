@@ -5,7 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import { cartContext } from "../App";
 import { authContext } from "../context/AuthContext";
-import axios from "axios";
+// import axios from "axios";
+import api from "../api/axios";
 import "./GlobalHeader.css";
 
 const GlobalHeader = () => {
@@ -16,7 +17,8 @@ const GlobalHeader = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/logout",
+        // "http://localhost:8000/api/auth/logout",
+        "/auth/logout",
         {},
         {
           withCredentials: true,

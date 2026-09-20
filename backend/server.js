@@ -11,10 +11,29 @@ const PORT = process.env.PORT || 8000;
 
 app.set("trust proxy", 1);
 // Middleware:
+// app.use(
+//   cors({
+//     // origin: "http://localhost:5173",
+//     origin: process.env.FRONTEND_URL,
+//     credentials: true,
+//   }),
+// );
+
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
+
 app.use(
   cors({
-    // origin: "http://localhost:5173",
-    origin: process.env.FRONTEND_URL,
+    origin: (origin, callback) => {
+      // allow requests with no origin (Postman, mobile apps, curl)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(new Error(`CORS blocked for origin: ${origin}`));
+    },
     credentials: true,
   }),
 );

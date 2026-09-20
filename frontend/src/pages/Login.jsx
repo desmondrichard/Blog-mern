@@ -2,7 +2,8 @@ import React, { useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useFormik } from "formik";
-import axios from "axios";
+// import axios from "axios";
+import api from "../api/axios";
 import { authContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
@@ -53,18 +54,22 @@ const Login = () => {
     // },
     onSubmit: async (values) => {
       try {
-        const response = await axios.post(
-          "http://localhost:8000/api/auth/login",
-          // values,
-          {
-            identifier: values.identifier,
-            password: values.password,
-          },
+        // const response = await axios.post(
+        //   "http://localhost:8000/api/auth/login",
+        //   // values,
+        //   {
+        //     identifier: values.identifier,
+        //     password: values.password,
+        //   },
 
-          {
-            withCredentials: true,
-          },
-        );
+        //   {
+        //     withCredentials: true,
+        //   },
+        // );
+        const response = await api.post("/auth/login", {
+          identifier: values.identifier,
+          password: values.password,
+        });
         setUser(response.data.user);
         setErrorMessage(null);
         console.log(response.data);
