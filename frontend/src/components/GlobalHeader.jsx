@@ -28,7 +28,7 @@ const GlobalHeader = () => {
 
   return (
     <div className="globalHeaderContainer">
-      <Navbar bg="primary" expand="lg">
+      <Navbar bg="primary" expand="lg" collapseOnSelect>
         <Container className="headerWrapper">
           <Navbar.Brand as={Link} to="/" className="headerTitle text-white">
             My Blog
