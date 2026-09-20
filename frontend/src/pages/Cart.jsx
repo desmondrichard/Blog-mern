@@ -49,7 +49,7 @@ const Cart = () => {
 
   const handlePay = async () => {
     try {
-      toast.info("Opening payment...");
+      // toast.info("Opening payment...");
       const response = await api.post("/cart/create-order");
       const { orderId, amount, currency } = response.data;
       const options = {
