@@ -234,20 +234,31 @@ router.post("/verify-payment", checkAuth, async (req, res) => {
     <p>Thank you for your purchase!</p>
   `,
     };
-    console.log("Sending email to:", user.email);
+    // console.log("Sending email to:", user.email);
 
-    const emailInfo = await transporter.sendMail(mailOptions);
+    // const emailInfo = await transporter.sendMail(mailOptions);
 
-    console.log("Email sent successfully");
-    console.log("Message ID:", emailInfo.messageId);
-    console.log("Accepted:", emailInfo.accepted);
-    console.log("Rejected:", emailInfo.rejected);
-    console.log("Response:", emailInfo.response);
+    // console.log("Email sent successfully");
+    // console.log("Message ID:", emailInfo.messageId);
+    // console.log("Accepted:", emailInfo.accepted);
+    // console.log("Rejected:", emailInfo.rejected);
+    // console.log("Response:", emailInfo.response);
 
     // 6. Clear only this user's cart
     await Cart.deleteMany({
       userId: req.user.userId,
     });
+
+    // 7. Send confirmation email (non-fatal if it fails)
+    try {
+      console.log("Sending email to:", user.email);
+      const emailInfo = await transporter.sendMail(mailOptions);
+      console.log("Email sent successfully");
+      console.log("Message ID:", emailInfo.messageId);
+    } catch (emailError) {
+      console.error("Email failed:", emailError.message);
+      // Do NOT throw — payment succeeded, cart cleared
+    }
 
     res.json({
       message: "Payment successful",
