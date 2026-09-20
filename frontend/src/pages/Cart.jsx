@@ -61,22 +61,22 @@ const Cart = () => {
         order_id: orderId,
 
         handler: async function (paymentResponse) {
+          // 1. Update the UI FIRST — no waiting on the backend
+          toast.success("Payment successful!");
+          setCartItems([]);
+          setCartCount(0);
+          setTimeout(() => navigate("/posts"), 800);
+          // 2. Verify in the background (errors don't block the user)
           try {
-              await api.post("/cart/verify-payment", {
+            await api.post("/cart/verify-payment", {
               razorpay_order_id: paymentResponse.razorpay_order_id,
               razorpay_payment_id: paymentResponse.razorpay_payment_id,
               razorpay_signature: paymentResponse.razorpay_signature,
             });
-
-            // console.log(response.data);
-            toast.success("Payment successful!");
-            setCartItems([]);
-            setCartCount(0);
-            // Redirect so the badge re-fetches fresh cart count
-            setTimeout(() => navigate("/posts"), 800);
           } catch (error) {
-            toast.error(
-              error.response?.data?.message || "Unable to start payment",
+            console.error(
+              "Verify error:",
+              error.response?.data?.message || error.message,
             );
           }
         },
