@@ -47,7 +47,7 @@ function App() {
     };
 
     fetchCartCount();
-  }, [user, authLoading]);
+  }, [user, authLoading, location.pathname]);
 
   // useEffect(() => {
   //   const fetchCartCount = async () => {

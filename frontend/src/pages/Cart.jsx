@@ -5,9 +5,11 @@ import axios from "axios";
 import { cartContext } from "../App";
 import api from "../api/axios";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const { setCartCount } = useContext(cartContext);
   const [cartItems, setCartItems] = useState([]);
 
@@ -46,7 +48,7 @@ const Cart = () => {
   };
 
   const handlePay = async () => {
-    try { 
+    try {
       toast.info("Opening payment...");
       const response = await api.post("/cart/create-order");
       const { orderId, amount, currency } = response.data;
@@ -60,16 +62,18 @@ const Cart = () => {
 
         handler: async function (paymentResponse) {
           try {
-            const response = await api.post("/cart/verify-payment", {
+              await api.post("/cart/verify-payment", {
               razorpay_order_id: paymentResponse.razorpay_order_id,
               razorpay_payment_id: paymentResponse.razorpay_payment_id,
               razorpay_signature: paymentResponse.razorpay_signature,
             });
 
-            console.log(response.data);
+            // console.log(response.data);
             toast.success("Payment successful!");
             setCartItems([]);
             setCartCount(0);
+            // Redirect so the badge re-fetches fresh cart count
+            setTimeout(() => navigate("/posts"), 800);
           } catch (error) {
             toast.error(
               error.response?.data?.message || "Unable to start payment",
