@@ -16,19 +16,13 @@ const GlobalHeader = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.post(
-        // "http://localhost:8000/api/auth/logout",
-        "/auth/logout",
-        {},
-        {
-          withCredentials: true,
-        },
-      );
-      setUser(null);
-      console.log(response.data);
-      navigate("/");
+      await api.post("/auth/logout");
+      // console.log(response.data);
     } catch (error) {
-      console.log(error.response?.data?.message);
+      console.log(error.response?.data?.message || error.message);
+    } finally {
+      setUser(null);
+      navigate("/");
     }
   };
 
