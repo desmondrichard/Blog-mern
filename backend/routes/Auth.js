@@ -9,6 +9,20 @@ const User = require("../models/User");
 const checkAuth = require("../middleware/checkAuth");
 const checkRole = require("../middleware/checkRole");
 
+const isProd = process.env.NODE_ENV === "production";
+
+const cookieOptions = {
+  httpOnly: true,
+  secure: isProd,
+  sameSite: isProd ? "none" : "lax",
+  maxAge: 15 * 60 * 1000,
+};
+
+const refreshCookieOptions = {
+  ...cookieOptions,
+  maxAge: 7 * 24 * 60 * 60 * 1000,
+};
+
 // register route:
 router.post("/register", async (req, res) => {
   try {
@@ -93,17 +107,9 @@ router.post("/login", async (req, res) => {
         },
       );
 
-      res.cookie("accessToken", accessToken, {
-        httpOnly: true,
-        secure: false,
-        sameSite: "lax",
-      });
+      res.cookie("accessToken", accessToken, cookieOptions);
 
-      res.cookie("refreshToken", refreshToken, {
-        httpOnly: true,
-        secure: false,
-        sameSite: "lax",
-      });
+      res.cookie("refreshToken", refreshToken, refreshCookieOptions);
 
       return res.json({
         message: "Admin login successful",
@@ -155,17 +161,9 @@ router.post("/login", async (req, res) => {
       },
     );
 
-    res.cookie("accessToken", accessToken, {
-      httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-    });
+    res.cookie("accessToken", accessToken, cookieOptions);
 
-    res.cookie("refreshToken", refreshToken, {
-      httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-    });
+    res.cookie("refreshToken", refreshToken, refreshCookieOptions);
 
     return res.json({
       message: "User login successful",
@@ -208,12 +206,7 @@ router.post("/refresh", async (req, res) => {
       },
     );
 
-    res.cookie("accessToken", newAccessToken, {
-      httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-      maxAge: 15 * 60 * 1000,
-    });
+    res.cookie("accessToken", newAccessToken, cookieOptions);
 
     res.json({
       message: "Access token refreshed",
@@ -227,8 +220,8 @@ router.post("/refresh", async (req, res) => {
 
 // logout route:
 router.post("/logout", (req, res) => {
-  res.clearCookie("accessToken");
-  res.clearCookie("refreshToken");
+  res.clearCookie("accessToken", cookieOptions);
+  res.clearCookie("refreshToken", refreshCookieOptions);
 
   res.json({
     message: "Logout successful",

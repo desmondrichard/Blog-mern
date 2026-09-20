@@ -9,13 +9,16 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 8000;
 
+app.set("trust proxy", 1);
 // Middleware:
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
   }),
 );
+
 app.use(express.json()); // for parsing application/json body-parser
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
