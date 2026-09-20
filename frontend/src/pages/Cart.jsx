@@ -53,7 +53,7 @@ const Cart = () => {
       const response = await api.post("/cart/create-order");
       const { orderId, amount, currency } = response.data;
       const options = {
-        key: "rzp_test_TbpsiEKUD31uyf",
+        key: "rzp_test_TeOmsbSgV7jgTN",
         amount: amount,
         currency: currency,
         name: "My Blog",
